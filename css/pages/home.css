@@ -96,4 +96,9 @@
 
 .projects {
   margin: 25px 100px;
+  text-align: center;
+}
+
+.projects img {
+  height: 300px;
 }
