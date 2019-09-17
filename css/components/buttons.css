@@ -1,0 +1,35 @@
+.btn-abs {
+  background-color: #262626;
+  color: white;
+  padding: 15px 25px;
+  width: 45%;
+  transition: 1s ease;
+  text-align: center;
+}
+
+.btn-abs:hover {
+  color: white;
+  background-color: black;
+ }
+
+.btn-abs-ghost {
+  background-color: white;
+  border: 1px solid #262626;
+  color: #262626;
+  padding: 14px 24px;
+  width: 45%;
+  transition: 1s ease;
+  text-align: center;
+}
+
+.btn-abs-ghost:hover {
+  color: black;
+  background-color: #F5F1EA;
+ }
+
+.btn-wrapper {
+  margin-top: 23px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,40 @@
+.navbar-abs {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  top: 0;
+  position: sticky;
+
+}
+ .navbar-abs a {
+    text-decoration: none;
+    color: black;
+    font-weight: light;
+    font-size: 18px;
+    color: #272728;
+  }
+
+.navbar-abs a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: light;
+    font-size: 18px;
+    color: #272728;
+  }
+
+.logo-abs {
+  font-size: 25px;
+  font-weight: light;
+  margin: 0;
+}
+
+.navbar-abs-right {
+  display: flex;
+  li {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #272728;
+  }
+
+}

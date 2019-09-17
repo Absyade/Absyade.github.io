@@ -1,0 +1,38 @@
+.banner-portfolio {
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner-text {
+  padding: 120px 100px;
+}
+
+.banner-text h1 {
+  color: #272728;
+  font-weight: bold;
+  font-size: 50px;
+}
+.banner-text p {
+  color: #272728;
+}
+
+.banner-text a {
+  text-decoration: none;
+}
+
+.banner-text a:hover {
+  text-decoration: none;
+}
+
+/*.social-medias-abs {
+  padding: 180px 80px;
+}*/
+
+.social-medias-abs a{
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+  font-size: 35px;
+  line-height: 100px;
+
+}
