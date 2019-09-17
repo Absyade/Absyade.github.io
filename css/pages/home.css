@@ -1,3 +1,5 @@
+/*GLOBAL*/
+
 /*BANNER*/
 .banner-portfolio {
   background-size: cover;
@@ -32,9 +34,13 @@
 .social-medias-abs a{
   text-decoration: none;
   margin-right: 30px;
-  color: black;
+  color: #272728;
   font-size: 35px;
   line-height: 100px;
+}
+
+.social-medias-abs a:hover {
+  color: black;
 }
 
 /*ABOUT*/
@@ -43,6 +49,7 @@
   box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
   margin: 25px 100px;
   padding: 50px;
+  background-color: #F5F1EA;
 }
 
 .about h2 {
@@ -70,16 +77,19 @@
   width: 400px;
   box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
   padding: 15px;
+  background-color: #F5F1EA;
 }
 .design {
   width: 400px;
   box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
   padding: 15px;
+  background-color: #F5F1EA;
 }
 .development {
   width: 400px;
   box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
   padding: 15px;
+  background-color: #F5F1EA;
 }
 
 /*PROJECTS*/
