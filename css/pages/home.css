@@ -1,3 +1,4 @@
+/*BANNER*/
 .banner-portfolio {
   background-size: cover;
   height: 100vh;
@@ -34,5 +35,55 @@
   color: black;
   font-size: 35px;
   line-height: 100px;
+}
 
+/*ABOUT*/
+
+.about {
+  box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
+  margin: 25px 100px;
+  padding: 50px;
+}
+
+.about h2 {
+  text-align: center;
+}
+.about img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid black;
+}
+
+/*SERVICES*/
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.conception {
+  width: 400px;
+  box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
+  padding: 15px;
+}
+.design {
+  width: 400px;
+  box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
+  padding: 15px;
+}
+.development {
+  width: 400px;
+  box-shadow: 0px 0px 14px -8px rgba(39,39,40,1);
+  padding: 15px;
+}
+
+/*PROJECTS*/
+
+.projects {
+  margin: 25px 100px;
 }
