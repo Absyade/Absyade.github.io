@@ -140,6 +140,12 @@
  /* margin: 45px;*/
 }
 
+.deployment-skills {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .collaboration-skills {
   display: flex;
   justify-content: space-between;
@@ -158,3 +164,16 @@
   height: 300px;
 }
 
+.projects a {
+  text-decoration: none;
+  color: black;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.handmaid {
+
+  padding: 10px;
+}
