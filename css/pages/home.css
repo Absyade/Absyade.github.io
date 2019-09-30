@@ -1,46 +1,40 @@
 /*GLOBAL*/
 
+body h1, h2, h3, h4, h5, a, p {
+  font-family: 'Rubik', sans-serif;
+}
+.theme-red {
+  color: #FB4B4E;
+}
+
 /*BANNER*/
 .banner-portfolio {
   background-size: cover;
   height: 100vh;
 }
-
 .banner-text {
   padding: 120px 100px;
 }
-
 .banner-text h1 {
-  color: #272728;
+  color: white;
   font-weight: bold;
   font-size: 50px;
 }
-.banner-text p {
-  color: #272728;
-}
-
 .banner-text a {
   text-decoration: none;
 }
-
 .banner-text a:hover {
   text-decoration: none;
 }
-
-/*.social-medias-abs {
-  padding: 180px 80px;
-}*/
-
 .social-medias-abs a{
   text-decoration: none;
   margin-right: 30px;
-  color: #272728;
-  font-size: 35px;
+  color: white;
+  font-size: 45px;
   line-height: 100px;
 }
-
 .social-medias-abs a:hover {
-  color: black;
+  color: #FB4B4E;
 }
 
 /*ABOUT*/
@@ -51,29 +45,30 @@
   color: white;
   text-align: center;
   font-weight: lighter;
+  height: 100vh;
 }
 .about-flexbox {
   display: flex;
   justify-content: space-around;
 }
-
 .about h2 {
   text-align: center;
 }
 .about img {
-  height: 400px;
+  height: 600px;
   object-fit: cover;
- /* margin: 0 auto;*/
   display: block;
-  border: 1px solid black;
+  border: 1px solid #FB4B4E;
 }
 
 .about-right {
   width: 500px;
+  background-color: #FB4B4E;
+  padding: 40px 30px;
+  text-align: left;
 }
 
 /*SERVICES*/
-
 .services {
   display: flex;
   justify-content: space-around;
@@ -82,13 +77,13 @@
   padding: 0px 30px;
   position: relative;
   top: 400;
-  background-color: #262626;
 }
 
 .conception {
   width: 470px;
   padding: 15px;
-  background-color: #F5F1EA;
+
+  color: white;
 
 }
 .design {
@@ -96,68 +91,60 @@
   padding: 15px;
   border-left: 1px #262626 solid;
   border-right: 1px #262626 solid;
+  color: white;
 
-  background-color: #F5F1EA;
 }
 .development {
   width: 470px;
   padding: 15px;
 /*  border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;*/
-  background-color: #F5F1EA;
+  color: white;
 
 }
 /*SKILLS*/
 .skills {
-  background-color: #F5F1EA;
+  background-size: cover;
   text-align: center;
+  height: 100vh;
 }
 .skills-wrapper {
-  width: 70%;
   margin: 0 auto;
+  height: 80%;
+}
 
+.line-one {
+  display: flex;
+
+}
+.line-two {
+  display: flex;
+
+}
+.line-three {
+  display: flex;
 }
 .skills img {
   height: 70px;
   object-fit: cover;
 }
-.coding-skills {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
- /* margin: 45px;*/
-}
-.design-skills {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
- /* margin: 45px;*/
-}
-.prototyping-skills {
- /* margin: 45px;*/
-}
-.deployment-skills {
- /* margin: 45px;*/
-}
+.skill-box {
+  border: 1px solid #FB4B4E;
+  width: 280px;
+  padding: 10px;
+  margin: 10px 10px;
+  color: #FB4B4E;
+  background-color: white;
+  opacity: 0.8;
 
-.deployment-skills {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
 }
-
-.collaboration-skills {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
- /* margin: 45px;*/
-}
-
 /*PROJECTS*/
 
 .projects {
   margin: 25px 100px;
   text-align: center;
+  height: 100vh;
+  box-shadow: 0px 0px 16px -3px rgba(251,75,78,1);
 }
 
 .projects img {

@@ -1,5 +1,5 @@
 .btn-abs {
-  background-color: #262626;
+  background-color: #FB4B4E;
   color: white;
   padding: 15px 25px;
   width: 45%;
@@ -9,13 +9,13 @@
 
 .btn-abs:hover {
   color: white;
-  background-color: black;
+  background-color: #FC7C7E;
  }
 
 .btn-abs-ghost {
   background-color: white;
-  border: 1px solid #262626;
-  color: #262626;
+  border: 1px solid #FB4B4E;
+  color: #FB4B4E;
   padding: 14px 24px;
   width: 45%;
   transition: 1s ease;
@@ -23,8 +23,9 @@
 }
 
 .btn-abs-ghost:hover {
-  color: black;
+  color: #FB4B4E;
   background-color: #F5F1EA;
+  border: 1px solid #FB4B4E;
  }
 
 .btn-wrapper {

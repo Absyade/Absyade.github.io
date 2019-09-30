@@ -9,18 +9,18 @@
 }
  .navbar-abs a {
     text-decoration: none;
-    color: black;
-    font-weight: light;
-    font-size: 18px;
-    color: #272728;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
   }
 
 .navbar-abs a:hover {
     text-decoration: none;
-    color: black;
+    color: #FB4B4E;
     font-weight: light;
-    font-size: 18px;
-    color: #272728;
+    font-size: 25px;
+    transition: 1s ease;
   }
 
 .logo-abs {
@@ -32,9 +32,8 @@
 .navbar-abs-right {
   display: flex;
   li {
-    margin-left: 50px;
     font-size: 18px;
-    color: #272728;
+    color: white;
   }
 
 }
