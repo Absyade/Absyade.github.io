@@ -7,21 +7,21 @@
   position: sticky;
 
 }
- .navbar-abs a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 20px;
-  }
+.navbar-abs a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px;
+}
 
 .navbar-abs a:hover {
-    text-decoration: none;
-    color: #FB4B4E;
-    font-weight: light;
-    font-size: 25px;
-    transition: 1s ease;
-  }
+  text-decoration: none;
+  color: #FB4B4E;
+  font-weight: light;
+  font-size: 25px;
+  transition: 1s ease;
+}
 
 
 
@@ -33,3 +33,15 @@
   }
 
 }
+
+
+.logo-nav img {
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.logo-nav img:hover {
+   cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out 0s;
+}
+
