@@ -1,6 +1,20 @@
 .footer {
   background-color: black;
-  padding: 50px;
+  padding: 80px 90px;
   color: white;
-  text-align: center;
+  height: 100vh;
+  background-size: cover;
+    background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.contact-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  color: #FB4B4E;
+  text-decoration: none;
 }

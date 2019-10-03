@@ -23,11 +23,7 @@
     transition: 1s ease;
   }
 
-.logo-abs {
-  font-size: 25px;
-  font-weight: light;
-  margin: 0;
-}
+
 
 .navbar-abs-right {
   display: flex;
