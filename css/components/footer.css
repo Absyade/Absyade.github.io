@@ -12,9 +12,12 @@
 .contact-footer a {
   color: white;
   text-decoration: none;
+  font-size: 30px;
 }
 
 .contact-footer a:hover {
   color: #FB4B4E;
   text-decoration: none;
+  transition: 2s ease;
+  font-size: 40px;
 }
