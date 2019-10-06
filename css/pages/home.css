@@ -11,6 +11,7 @@ body h1, h2, h3, h4, h5, a, p {
 .banner-portfolio {
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 .banner-text {
   padding: 120px 100px;
@@ -45,26 +46,30 @@ body h1, h2, h3, h4, h5, a, p {
   color: white;
   text-align: center;
   height: 100vh;
+  overflow: hidden;
 }
-.about-flexbox {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 mark {
   background: white;
   color: #FB4B4E;
 }
-
+.about-left {
+  padding: 0 !important;
+}
 
 .about h2 {
   text-align: center;
 }
 .about img {
-  height: 500px;
-  object-fit: cover;
-  display: block;
-  /*border: 2px solid #FB4B4E;*/
+ height: 500px;
+ object-fit: cover;
+ display: block;
+ padding: 0;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
+ /*border: 2px solid #FB4B4E;*/
 }
 .about-contact {
   text-decoration: none;
@@ -77,12 +82,14 @@ mark {
 }
 
 .about-right {
-  height: 500px;
   background-color: #FB4B4E;
   padding: 30px 20px;
   text-align: left;
-  width: 100%;
   overflow: scroll;
+ display: block;
+ padding: 0;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 /*SERVICES*/
@@ -124,37 +131,27 @@ color: white;
   background-size: cover;
   text-align: center;
   height: 100vh;
-}
-.skills-wrapper {
-  margin: 0 auto;
-  height: 80%;
+  padding: 20px;
   overflow: hidden;
 }
-
-.line-one {
-  display: flex;
-
+.skill-wrapper {
+  margin: 0 auto;
 }
-.line-two {
-  display: flex;
-
-}
-.line-three {
-  display: flex;
-}
-.skills img {
-  height: 70px;
+.skill-box img {
+  height: 50px;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .skill-box {
   border: 1px solid #FB4B4E;
-  width: 280px;
-  padding: 10px;
-  margin: 10px 10px;
+
+  padding: 25px;
+  margin: 5px;
   color: #FB4B4E;
   background-color: black;
- /* opacity: 0.8;*/
-
+  text-align: center;
 }
 /*PROJECTS*/
 
