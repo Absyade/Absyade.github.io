@@ -68,7 +68,7 @@ mark {
  padding: 0;
  margin-left: auto;
  margin-right: auto;
- margin-bottom: 20px;
+ margin-bottom: 100px;
  /*border: 2px solid #FB4B4E;*/
 }
 .about-contact {
@@ -86,10 +86,11 @@ mark {
   padding: 30px 20px;
   text-align: left;
   overflow: scroll;
- display: block;
- padding: 0;
- margin-left: auto;
- margin-right: auto;
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
 }
 
 /*SERVICES*/
