@@ -1,16 +1,16 @@
 /*GLOBAL*/
-
 body h1, h2, h3, h4, h5, a, p {
   font-family: 'Rubik', sans-serif;
 }
 .theme-red {
   color: #FB4B4E;
 }
-
 /*BANNER*/
 .banner-portfolio {
   background-image: url("../../images/background2black-compressor.jpg");
   background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
 }
@@ -22,7 +22,6 @@ body h1, h2, h3, h4, h5, a, p {
   font-weight: bold;
   font-size: 50px;
   text-shadow: 0.5px 0.5px 3px rgba(255,255,255,0.3);
-
 }
 .banner-text a {
   text-decoration: none;
@@ -42,7 +41,6 @@ body h1, h2, h3, h4, h5, a, p {
 }
 
 /*ABOUT*/
-
 .about {
   padding: 50px 100px;
   background-color: black;
@@ -51,8 +49,6 @@ body h1, h2, h3, h4, h5, a, p {
   height: 100vh;
   overflow: hidden;
 }
-
-
 mark {
   background: white;
   color: #FB4B4E;
@@ -60,7 +56,6 @@ mark {
 .about-left {
   padding: 0 !important;
 }
-
 .about h2 {
   text-align: center;
 }
@@ -72,18 +67,15 @@ mark {
  margin-left: auto;
  margin-right: auto;
  margin-bottom: 100px;
- /*border: 2px solid #FB4B4E;*/
 }
 .about-contact {
   text-decoration: none;
   color: white;
 }
-
 .about-contact:hover {
   text-decoration: none;
   color: white;
 }
-
 .about-right {
   background-color: #FB4B4E;
   padding: 30px 20px;
@@ -95,7 +87,6 @@ mark {
   margin-right: auto;
   height: 500px;
 }
-
 /*SERVICES*/
 .services {
   display: flex;
@@ -106,13 +97,10 @@ mark {
   position: relative;
   top: 400;
 }
-
 .conception {
   width: 470px;
   padding: 15px;
-
   color: white;
-
 }
 .design {
   width: 470px;
@@ -120,15 +108,11 @@ mark {
   border-left: 1px #262626 solid;
   border-right: 1px #262626 solid;
   color: white;
-
 }
 .development {
   width: 470px;
   padding: 15px;
-/*  border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;*/
-color: white;
-
+  color: white;
 }
 /*SKILLS*/
 .skills {
@@ -157,29 +141,22 @@ color: white;
   text-align: center;
 }
 /*PROJECTS*/
-
 .projects {
- /* margin: 25px 100px;*/
  text-align: center;
  background-color: black;
  padding: 40px;
  height: 90vh;
  color: white;
 }
-
-
 .projects a {
   text-decoration: none;
 }
-
 .projects a:hover {
   text-decoration: none;
 }
-
 .sr-only {
   color: black !important;
 }
-
 .carousel-inner {
   height: 100%;
 }
