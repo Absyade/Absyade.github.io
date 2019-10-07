@@ -11,12 +11,12 @@ body h1, h2, h3, h4, h5, a, p {
 .banner-portfolio {
   background-image: url("../../images/background2black.JPG");
   background-size: cover;
-  background-position: center center;
+  /*background-position: center center;*/
   height: 100vh;
   overflow: hidden;
 }
-*/.banner-text {
-  padding: 120px 100px;
+.banner-text {
+  padding: 100px 100px;
 }
 .banner-text h1 {
   color: white;
