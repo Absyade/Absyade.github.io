@@ -9,7 +9,7 @@ body h1, h2, h3, h4, h5, a, p {
 
 /*BANNER*/
 .banner-portfolio {
-  background-image: url("../../images/background2black.JPG");
+  background-image: url("../../images/background2black-compressor.JPG");
   background-size: cover;
   /*background-position: center center;*/
   height: 100vh;
@@ -22,6 +22,8 @@ body h1, h2, h3, h4, h5, a, p {
   color: white;
   font-weight: bold;
   font-size: 50px;
+  text-shadow: 0.5px 0.5px 3px rgba(255,255,255,0.3);
+
 }
 .banner-text a {
   text-decoration: none;
@@ -138,7 +140,7 @@ color: white;
   overflow: hidden;
 }
 .skill-wrapper {
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .skill-box img {
   height: 50px;
@@ -149,7 +151,6 @@ color: white;
 }
 .skill-box {
   border: 1px solid #FB4B4E;
-
   padding: 25px;
   margin: 5px;
   color: #FB4B4E;
