@@ -11,7 +11,6 @@ body h1, h2, h3, h4, h5, a, p {
 .banner-portfolio {
   background-image: url("../../images/background2black-compressor.jpg");
   background-size: cover;
-  /*background-position: center center;*/
   height: 100vh;
   overflow: hidden;
 }
@@ -140,7 +139,7 @@ color: white;
   overflow: hidden;
 }
 .skill-wrapper {
-  margin: 25px auto;
+  margin: 15px auto;
 }
 .skill-box img {
   height: 50px;
