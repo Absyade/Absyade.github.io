@@ -9,7 +9,7 @@ body h1, h2, h3, h4, h5, a, p {
 
 /*BANNER*/
 .banner-portfolio {
-  background-image: url("../../images/background2black-compressor.JPG");
+  background-image: url("../../images/background2black-compressor.jpg");
   background-size: cover;
   /*background-position: center center;*/
   height: 100vh;
