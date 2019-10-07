@@ -15,20 +15,6 @@ body h1, h2, h3, h4, h5, a, p {
   height: 100vh;
   overflow: hidden;
 }
-
-@media only screen and (max-width: 767px) {
-  .banner-portfolio  {
-     /*The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections*/
-    background-image: url("../../images/background2blackmobile.JPG");
-  }
-}
-
-/*@media only screen and (min-width : 320px) and (max-width : 480px){
-.banner-portfolio {
-  background-image: url("../../images/darkmontain.jpg") no-repeat center center fixed;
-}
-}
 */.banner-text {
   padding: 120px 100px;
 }
