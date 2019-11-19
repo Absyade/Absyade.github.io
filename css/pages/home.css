@@ -159,3 +159,19 @@ mark {
 .carousel-inner {
   height: 100%;
 }
+
+
+/*MAP*/
+
+/*.where {
+  background-color: black;
+  height: 100vh;
+  background-size: cover;
+}
+
+
+.where h2 {
+  margin: 0px;
+  color: white;
+}
+*/
