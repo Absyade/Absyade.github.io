@@ -46,6 +46,10 @@
   <meta name="msapplication-TileImage" content="/favicon-144.png">
   <meta name="msapplication-config" content="/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
+  <!-- Mapbox JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -71,13 +75,13 @@
       <div class="banner-text">
         <h1>Hello I'm Abs !</h1>
         <h1>I'm a <span
-     class="txt-rotate theme-red"
-     data-period="3000"
-     data-rotate='[ "Fullstack web developer.", "tech recruiter."]'></span></h1>
-     <h1>Nice to meet you!</h1>
+         class="txt-rotate theme-red"
+         data-period="3000"
+         data-rotate='[ "Fullstack web developer.", "tech recruiter."]'></span></h1>
+         <h1>Nice to meet you!</h1>
 
-        <!-- <h1>I <span class="theme-red">design</span> & <span class="theme-red">build</span> web applications.</h1> -->
-        <div class="btn-wrapper">
+         <!-- <h1>I <span class="theme-red">design</span> & <span class="theme-red">build</span> web applications.</h1> -->
+         <div class="btn-wrapper">
           <a class="btn-abs" href="#contact">Let's work together!</a>
           <!-- <a class="btn-abs" href="https://github.com/Absyade/Absyade.github.io/raw/master/CV_Abs_YADE.pdf">download resume</a> -->
         </div>
@@ -270,6 +274,111 @@
     <h2 style="text-align: left; font-size: 60px; font-weight: lighter;">WHERE AM I ?</h2>
   </div>
 </div> -->
+<!-- WHERE AM I -->
+<div class="where">
+<div class="container">
+
+  <h2 style="text-align: left; font-size: 60px; margin-top: 0px; font-weight: lighter;">WHERE AM I NOW?</h2>
+
+</div>
+  <div class="where-flex">
+
+
+
+  <div id="map" style='width: 50%; height: 90%;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v10',
+
+    });
+    map.addControl(new mapboxgl.NavigationControl());
+    var size = 50;
+// implementation of CustomLayerInterface to draw a pulsing dot icon on the map
+// see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
+var pulsingDot = {
+  width: size,
+  height: size,
+  data: new Uint8Array(size * size * 4),
+
+// get rendering context for the map canvas when layer is added to the map
+onAdd: function() {
+  var canvas = document.createElement('canvas');
+  canvas.width = this.width;
+  canvas.height = this.height;
+  this.context = canvas.getContext('2d');
+},
+// called once before every frame where the icon will be used
+render: function() {
+  var duration = 1000;
+  var t = (performance.now() % duration) / duration;
+
+  var radius = size / 2 * 0.3;
+  var outerRadius = size / 2 * 0.7 * t + radius;
+  var context = this.context;
+// draw outer circle
+context.clearRect(0, 0, this.width, this.height);
+context.beginPath();
+context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
+context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
+context.fill();
+
+// draw inner circle
+context.beginPath();
+context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
+context.fillStyle = 'rgba(255, 100, 100, 1)';
+context.strokeStyle = 'white';
+context.lineWidth = 2 + 4 * (1 - t);
+context.fill();
+context.stroke();
+
+// update this image's data with data from the canvas
+this.data = context.getImageData(0, 0, this.width, this.height).data;
+
+// continuously repaint the map, resulting in the smooth animation of the dot
+map.triggerRepaint();
+
+// return `true` to let the map know that the image was updated
+return true;
+}
+};
+
+map.on('load', function () {
+
+  map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
+
+  map.addLayer({
+    "id": "points",
+    "type": "symbol",
+    "source": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [{
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-0.125, 51.508]
+          }
+        }]
+      }
+    },
+    "layout": {
+      "icon-image": "pulsing-dot"
+    }
+  });
+});
+</script>
+
+<img src="images/sub.png" style="width: 50%; height:90%; object-fit: cover;" alt="plane">
+
+
+
+</div>
+  </div>
+
+
 <!-- FOOTER -->
 <div id="contact" class="footer" style="background-image: url('images/background-footer.png')">
   <img style="height: 100px; object-fit: cover;" src="images/abs-logo-red.png" alt="logo">
