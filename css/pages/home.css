@@ -49,10 +49,7 @@ body h1, h2, h3, h4, h5, a, p {
   height: 100vh;
   overflow: hidden;
 }
-mark {
-  background: white;
-  color: #FB4B4E;
-}
+
 .about-left {
   padding: 0 !important;
 }
