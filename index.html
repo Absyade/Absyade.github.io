@@ -200,7 +200,7 @@
     </div>
   </div>
   <!-- ABOUT -->
-  <div id="about" class="about">
+  <div class="about">
     <div class="container">
       <h2 style="text-align: right; font-size: 60px; margin-bottom: 20px;">WHO AM I?</h2>
       <div class="row">
@@ -287,10 +287,12 @@
 
   <div id="map" style='width: 50%; height: 90%;'></div>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw';
+    mapboxgl.accessToken = "pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw";
     var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/dark-v10',
+      container: "map",
+      style: "mapbox://styles/absinho/ck3z00eo75wha1cmim7jp51nv",
+      center: [-0.125, 51.508],
+      zoom: 2,
 
     });
     map.addControl(new mapboxgl.NavigationControl());
@@ -369,6 +371,7 @@ map.on('load', function () {
     }
   });
 });
+map.scrollZoom.disable();
 </script>
 
 <img src="images/sub.png" style="width: 50%; height:90%; object-fit: cover;" alt="plane">
