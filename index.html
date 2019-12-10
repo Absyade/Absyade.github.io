@@ -97,7 +97,7 @@
     </div>
   </div>
   <!-- SKILLS -->
-  <div id="skills" class="skills" style="background-image:  url('images/darkmontain.jpg')">
+  <div id="skills" class="skills" style="background-image:  url('images/darkroad.jpg')">
     <div class="container">
       <h2 style="text-align: left; color: white; font-size: 60px; margin-bottom: 20px;">TECHNICAL SKILLS</h2>
       <!-- SERVICES (inside ABOUT div-->
@@ -205,24 +205,24 @@
       <h2 style="text-align: right; font-size: 60px; margin-bottom: 20px;">WHO AM I?</h2>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 about-left">
-          <img data-aos="fade-right" data-aos-duration="4000" src="images/abswho.png" alt="Abs Yade">
+          <img data-aos="fade-down" data-aos-duration="3000" src="images/abswho.png" alt="Abs Yade">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 about-right">
-          <p>🇬🇧 Hello, I'm Abs, nice to meet you!</p>
+          <p>🇬🇧 Hey, I'm Abs, nice to meet you!</p>
           <p>I'm French and I had the chance to live in some of the coolest cities such as New York, Paris, Dakar, London & Barcelona.</p>
-          <p>After 2 years and a half working as a Tech Headhunter, I wanted to get to know more about the technical side. So I decided to attend <strong>Le Wagon</strong> Barcelona to learn to code</p>
-          <p>At Le Wagon, I learned how to build web and mobile applications. Beyond learning the programming languages needed to be a full stack developer (Ruby, HTML, CSS, JavaScript, SQL), I also learned how to design API calls and scraping to create a consolidated finished product, using Ruby on Rails as a framework.</p>
-          <p>I am passionate about <strong>tech</strong>. Now, I am looking for my next challenge!</p>
-          <a class="about-contact" href="#contact"><p><span style="font-weight:bold;">So, if you are interested in knowing more about my profile, feel free to reach out.</span></p></a>
+          <p>I have 3 years of experience as a Tech Headhunter. I am passionate about Tech and I always wanted to get to know more about the technical side. That is why I attended <strong>Le Wagon</strong> Barcelona to learn to code.</p>
+          <p>At Le Wagon, I learned how to build web and mobile applications. Beyond learning the programming languages needed to be a full stack developer, I also learned how to design API calls and scraping to create a consolidated finished product, using an MVC pattern with Rails as a framework.</p>
+          <p>I enjoy coding, as I get to build cool stuff and express my creativity. It also helps me on a daily basis as a Tech Recruiter looking for the best talents out there. 🔎</p>
+          <a class="about-contact" href="#contact"><p><span style="font-weight:bold;">If you are interested in knowing more about my profile or want to collaborate, feel free to reach out.</span></p></a>
           <p>Languages: French & English</p>
-          <p style="text-align: center;">__________________</p>
+    <!--       <p style="text-align: center;">__________________</p>
           <p>🇫🇷 Bonjour, je suis Abs, enchanté!</p>
           <p>Je suis Français et j'ai eu la chance de vivre dans certaines des villes les plus cool, telles que New York, Paris, Dakar, Londres & Barcelone.</p>
           <p>Après deux années à travailler en tant que chasseur de tête dans le monde de la Tech, je souhaitai en apprendre plus sur la tech, j'ai donc décidé de suivre une formation au Wagon à Barcelone pour apprendre à coder.</p>
           <p>Au Wagon, j'ai appris à construire des applications web et mobile. Au delà d'apprendre les langages de programmation dont j'avais besoin pour devenir un développeur full stack (Ruby, HTML, CSS, JavaScript, SQL), j'ai également appris à appeler des API et à construire des produits en utilisant le framework Rails MVC.</p>
           <p>J'ai une passion pour la <strong>tech</strong>. Désormais, je suis à la recherche de mon prochain challenge!</p>
           <a class="about-contact" href="#contact"><p><span style="font-weight:bold;">Si vous souhaitez en savoir plus sur mon profil, n'hésitez pas à me contacter!</span></p></a>
-          <p>Languages: French & English</p>
+          <p>Languages: French & English</p> -->
         </div>
       </div>
     </div>
@@ -276,27 +276,28 @@
 </div> -->
 <!-- WHERE AM I -->
 <div class="where">
-<div class="container">
+  <div class="container">
 
-  <h2 style="text-align: left; font-size: 60px; margin-top: 0px; font-weight: lighter;">WHERE AM I NOW?</h2>
+    <h2 style="text-align: left; font-size: 60px; margin-top: 0px; font-weight: lighter;">WHERE AM I NOW?</h2>
 
-</div>
+  </div>
   <div class="where-flex">
 
 
 
-  <div id="map" style='width: 50%; height: 90%;'></div>
-  <script>
-    mapboxgl.accessToken = "pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw";
-    var map = new mapboxgl.Map({
-      container: "map",
-      style: "mapbox://styles/absinho/ck3z0ogoj19971cn7cbxqod2t",
-      center: [-0.125, 51.508],
-      zoom: 2,
+    <div id="map" style='width: 50%; height: 90%;'></div>
+    <img src="images/LDN.jpg" style="width: 50%; height:90%; object-fit: cover;" alt="London">
+    <script>
+      mapboxgl.accessToken = "pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/absinho/ck3z0ogoj19971cn7cbxqod2t",
+        center: [-0.125, 51.508],
+        zoom: 2,
 
-    });
-    map.addControl(new mapboxgl.NavigationControl());
-    var size = 50;
+      });
+      map.addControl(new mapboxgl.NavigationControl());
+      var size = 50;
 // implementation of CustomLayerInterface to draw a pulsing dot icon on the map
 // see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
 var pulsingDot = {
@@ -374,12 +375,12 @@ map.on('load', function () {
 map.scrollZoom.disable();
 </script>
 
-<img src="images/sub.png" style="width: 50%; height:90%; object-fit: cover;" alt="plane">
+
 
 
 
 </div>
-  </div>
+</div>
 
 
 <!-- FOOTER -->
