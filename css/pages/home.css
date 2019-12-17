@@ -1,6 +1,7 @@
 /*GLOBAL*/
 body h1, h2, h3, h4, h5, a, p {
   font-family: 'Rubik', sans-serif;
+
 }
 .theme-red {
   color: #FB4B4E;
@@ -82,7 +83,7 @@ body h1, h2, h3, h4, h5, a, p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 550px;
 }
 /*SERVICES*/
 .services {
@@ -123,18 +124,18 @@ body h1, h2, h3, h4, h5, a, p {
   margin: 15px auto;
 }
 .skill-box img {
-  height: 50px;
+  height: 40px;
   object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .skill-box {
-  border: 1px solid #FB4B4E;
+  border: 1px solid white;
   padding: 25px;
   margin: 5px;
   color: #FB4B4E;
-  background-color: black;
+  background-color: transparent;
   text-align: center;
 }
 /*PROJECTS*/
@@ -164,7 +165,8 @@ body h1, h2, h3, h4, h5, a, p {
 .where {
   background-color: black;
   background-size: cover;
-/*  height: 70vh;*/
+  padding: 100px;
+  height: 100vh;
 }
 .where h2 {
   margin: 0px;
@@ -172,6 +174,7 @@ body h1, h2, h3, h4, h5, a, p {
 }
 .where-flex {
   display: flex;
-  height: 70vh;
+  height: 100vh;
+  justify-content: space-between;
 
 }

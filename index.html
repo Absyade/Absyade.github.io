@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -63,9 +64,6 @@
       </div>
       <div class="navbar-abs-right">
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="#skills">SKILLS</a></li>
-          <li class="list-inline-item"><a href="#about">ABOUT</a></li>
-          <li class="list-inline-item"><a href="#projects">PROJECTS</a></li>
           <li class="list-inline-item"><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
@@ -76,8 +74,8 @@
         <h1>Hello I'm Abs,</h1>
         <h1>I'm a <span
          class="txt-rotate theme-red"
-         data-period="3000"
-         data-rotate='[ "fullstack developer.", "tech recruiter."]'></span></h1>
+         data-period="2000"
+         data-rotate='[ "frontend developer.", "tech recruiter."]'></span></h1>
          <h1>Nice to meet you!</h1>
 
          <!-- <h1>I <span class="theme-red">design</span> & <span class="theme-red">build</span> web applications.</h1> -->
@@ -97,9 +95,9 @@
     </div>
   </div>
   <!-- SKILLS -->
-  <div id="skills" class="skills" style="background-image:  url('images/darkroad.jpg')">
+  <div id="skills" class="skills" style="background-image:  url('images/test5.jpg')">
     <div class="container">
-      <h2 style="text-align: left; color: white; font-size: 60px; margin-bottom: 20px;">TECHNICAL SKILLS</h2>
+      <h2 style="text-align: left; color: #FB4B4E; font-size: 40px; margin-bottom: 20px;">TECHNICAL SKILLS</h2>
       <!-- SERVICES (inside ABOUT div-->
       <div class="services">
         <div class="conception">
@@ -202,10 +200,10 @@
   <!-- ABOUT -->
   <div id="about" class="about">
     <div class="container">
-      <h2 style="text-align: right; font-size: 60px; margin-bottom: 20px;">WHO AM I?</h2>
+      <h2 style="text-align: right; color: #FB4B4E; font-size: 40px; margin-bottom: 20px;">WHO AM I?</h2>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 about-left">
-          <img data-aos="fade-down" data-aos-duration="3000" src="images/abswho.png" alt="Abs Yade">
+          <img data-aos="fade-left" data-aos-duration="3000" src="images/abswho.png" alt="Abs Yade">
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 about-right">
           <p>🇬🇧 Hey, I'm Abs, nice to meet you!</p>
@@ -228,9 +226,11 @@
     </div>
   </div>
 </div>
+
+
 <!-- PROJECTS -->
 <div id="projects" class="projects">
-  <h2 style="text-align: left; font-size: 60px; margin-top: 25px; font-weight: lighter;">PROJECTS</h2>
+  <h2 style="text-align: left; font-size: 40px; margin-top: 0px font-weight: lighter; color: #FB4B4E;">PROJECTS</h2>
   <!-- CAROUSEL -->
   <div class="bd-example">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -267,122 +267,18 @@
     </div>
   </div>
 </div>
-
-<!--MAP
-<div class="where" style="background-image: url('images/where.jpg')">
-  <div class="container">
-    <h2 style="text-align: left; font-size: 60px; font-weight: lighter;">WHERE AM I ?</h2>
-  </div>
-</div> -->
 <!-- WHERE AM I -->
 <div class="where">
   <div class="container">
-
-    <h2 style="text-align: left; font-size: 60px; margin-top: 0px; font-weight: lighter;">WHERE AM I NOW?</h2>
-
-  </div>
-  <div class="where-flex">
-
-
-
-    <div id="map" style='width: 50%; height: 90%;'></div>
-    <img src="images/LDN.jpg" style="width: 50%; height:90%; object-fit: cover;" alt="London">
-    <script>
-      mapboxgl.accessToken = "pk.eyJ1IjoiYWJzaW5obyIsImEiOiJjanlrNnc5cnEwMDBxM2xqd3pzaGc3eXdlIn0.R1EDUPGVZqRPRhrWUUFmXw";
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/absinho/ck3z0ogoj19971cn7cbxqod2t",
-        center: [-0.125, 51.508],
-        zoom: 2,
-
-      });
-      map.addControl(new mapboxgl.NavigationControl());
-      var size = 50;
-// implementation of CustomLayerInterface to draw a pulsing dot icon on the map
-// see https://docs.mapbox.com/mapbox-gl-js/api/#customlayerinterface for more info
-var pulsingDot = {
-  width: size,
-  height: size,
-  data: new Uint8Array(size * size * 4),
-
-// get rendering context for the map canvas when layer is added to the map
-onAdd: function() {
-  var canvas = document.createElement('canvas');
-  canvas.width = this.width;
-  canvas.height = this.height;
-  this.context = canvas.getContext('2d');
-},
-// called once before every frame where the icon will be used
-render: function() {
-  var duration = 1000;
-  var t = (performance.now() % duration) / duration;
-
-  var radius = size / 2 * 0.3;
-  var outerRadius = size / 2 * 0.7 * t + radius;
-  var context = this.context;
-// draw outer circle
-context.clearRect(0, 0, this.width, this.height);
-context.beginPath();
-context.arc(this.width / 2, this.height / 2, outerRadius, 0, Math.PI * 2);
-context.fillStyle = 'rgba(255, 200, 200,' + (1 - t) + ')';
-context.fill();
-
-// draw inner circle
-context.beginPath();
-context.arc(this.width / 2, this.height / 2, radius, 0, Math.PI * 2);
-context.fillStyle = 'rgba(255, 100, 100, 1)';
-context.strokeStyle = 'white';
-context.lineWidth = 2 + 4 * (1 - t);
-context.fill();
-context.stroke();
-
-// update this image's data with data from the canvas
-this.data = context.getImageData(0, 0, this.width, this.height).data;
-
-// continuously repaint the map, resulting in the smooth animation of the dot
-map.triggerRepaint();
-
-// return `true` to let the map know that the image was updated
-return true;
-}
-};
-
-map.on('load', function () {
-
-  map.addImage('pulsing-dot', pulsingDot, { pixelRatio: 2 });
-
-  map.addLayer({
-    "id": "points",
-    "type": "symbol",
-    "source": {
-      "type": "geojson",
-      "data": {
-        "type": "FeatureCollection",
-        "features": [{
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [-0.125, 51.508]
-          }
-        }]
-      }
-    },
-    "layout": {
-      "icon-image": "pulsing-dot"
-    }
-  });
-});
-map.scrollZoom.disable();
-</script>
-
-
-
-
-
+    <h2 style="text-align: left; font-size: 40px; margin-top: 0px; font-weight: lighter;"></h2>
+    <div class="where-flex">
+      <div id="map" style='width: 45%; height: 60%;'><p style="color: white; font-size: 20px; text-align: center; background-color: #FB4B4E; padding: 10px; margin: 0px;">WHERE AM I NOW?</p></div>
+      <div class="spotify" style='width: 45%; height: 60%;'>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EttIbXjH7hTdE" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"><p>test</p></iframe>
+      </div>
 </div>
 </div>
-
-
+</div>
 <!-- FOOTER -->
 <div id="contact" class="footer" style="background-image: url('images/background-footer.png')">
   <img style="height: 100px; object-fit: cover;" src="images/abs-logo-red.png" alt="logo">
