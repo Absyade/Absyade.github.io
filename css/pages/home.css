@@ -163,10 +163,10 @@ body h1, h2, h3, h4, h5, a, p {
 /*MAP*/
 
 .where {
-  background-color: black;
+  background-color: #343332;
   background-size: cover;
-  padding: 100px;
-  height: 100vh;
+  padding: 50px;
+  height: 70vh;
 }
 .where h2 {
   margin: 0px;
@@ -174,7 +174,7 @@ body h1, h2, h3, h4, h5, a, p {
 }
 .where-flex {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   justify-content: space-between;
 
 }

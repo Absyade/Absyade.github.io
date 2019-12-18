@@ -23,6 +23,10 @@
   transition: 1s ease;
 }
 
+.logo-nav img {
+  position: fixed;
+  height: 80px;
+}
 
 
 .navbar-abs-right {
