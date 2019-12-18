@@ -1,0 +1,15 @@
+.sticky-element {
+  position: fixed;
+}
+.logo-nav img {
+  position: fixed;
+  height: 100px;
+  transition: all 0.7s ease-in-out 0s;
+  padding: 15px 25px;
+}
+.logo-nav img:hover {
+ cursor: default;
+ transform: rotate(360deg);
+ transition: all 0.7s ease-in-out 0s;
+}
+

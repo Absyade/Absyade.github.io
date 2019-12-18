@@ -1,4 +1,7 @@
 /*GLOBAL*/
+body {
+  margin: 0px;
+}
 body h1, h2, h3, h4, h5, a, p {
   font-family: 'Rubik', sans-serif;
 
@@ -17,7 +20,7 @@ body h1, h2, h3, h4, h5, a, p {
   overflow: hidden;
 }
 .banner-text {
-  padding: 100px 100px;
+  padding: 200px 100px;
 }
 .banner-text h1 {
   color: white;
