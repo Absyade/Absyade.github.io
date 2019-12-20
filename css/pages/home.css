@@ -37,7 +37,8 @@ body h1, h2, h3, h4, h5, a, p {
 .banner-text a:hover {
   text-decoration: none;
 }
-.social-medias-abs a{
+
+/*.social-medias-abs a{
   text-decoration: none;
   margin-right: 30px;
   color: white;
@@ -46,7 +47,7 @@ body h1, h2, h3, h4, h5, a, p {
 }
 .social-medias-abs a:hover {
   color: #FB4B4E;
-}
+}*/
 /*ABOUT*/
 .about {
   padding: 50px 100px;
@@ -125,7 +126,8 @@ body h1, h2, h3, h4, h5, a, p {
   overflow: hidden;
 }
 .skill-wrapper {
-  margin: 15px auto;
+  margin: 100px auto;
+  /*padding: 100px;*/
 }
 .skill-box img {
   height: 40px;
@@ -168,7 +170,38 @@ body h1, h2, h3, h4, h5, a, p {
   background-size: cover;
   padding: 100px;
   height: 100vh;
+  overflow: hidden;
 }
-.where-elements {
- height: 500px;
+.wheregrid {
+display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+/*grid-template-columns: 1fr 1fr;
+grid-column-gap: 30px;
+grid-template-rows: 80px 60px;*/
 }
+.where-elements > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+#map {
+  width: 100%;
+
+}
+
+.spotify {
+  width: 100%;
+}
+
+.cd-section {
+  height: 100vh;
+}
+.cd-section:first-of-type > div {
+  background-color: #2b334f;
+}
+.cd-section:nth-of-type(2) > div {
+  background-color: #2e5367;
+}
+

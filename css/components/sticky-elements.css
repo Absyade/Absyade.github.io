@@ -14,14 +14,29 @@
 }
 
 .followme {
-  position: absolute;
-  bottom: 80px;
-  right: 20px;
+  position: fixed;
+  bottom: 40px;
+  left: 95%;
+}
+.followme a {
   color: white;
-  transform: rotate(90deg);
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 7px 10px;
+
+}
+
+.followme a:hover {
+  color: #FB4B4E;
+  border: 1px solid #FB4B4E;
 }
 
 .sticky {
   position: fixed;
    color: white;
+}
+
+.rotateninety {
+  transform: rotate(90deg);
 }
