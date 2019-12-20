@@ -4,12 +4,10 @@ body {
 }
 body h1, h2, h3, h4, h5, a, p {
   font-family: 'Rubik', sans-serif;
-
 }
 .theme-red {
   color: #FB4B4E;
 }
-
 /*BANNER*/
 .banner-portfolio {
   background-image: url("../../images/background2black-compressor.jpg");
@@ -18,9 +16,13 @@ body h1, h2, h3, h4, h5, a, p {
   background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .banner-text {
-  padding: 200px 100px;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 15%;
 
 }
 .banner-text h1 {
@@ -45,7 +47,6 @@ body h1, h2, h3, h4, h5, a, p {
 .social-medias-abs a:hover {
   color: #FB4B4E;
 }
-
 /*ABOUT*/
 .about {
   padding: 50px 100px;
@@ -55,7 +56,6 @@ body h1, h2, h3, h4, h5, a, p {
   height: 100vh;
   overflow: hidden;
 }
-
 .about-left {
   padding: 0 !important;
 }
@@ -162,23 +162,13 @@ body h1, h2, h3, h4, h5, a, p {
 .carousel-inner {
   height: 100%;
 }
-
-
 /*MAP*/
-
 .where {
-  background-color: #343332;
+  background-color: grey;
   background-size: cover;
-  padding: 50px;
-  height: 70vh;
+  padding: 100px;
+  height: 100vh;
 }
-.where h2 {
-  margin: 0px;
-  color: white;
-}
-.where-flex {
-  display: flex;
-  height: 90vh;
-  justify-content: space-between;
-
+.where-elements {
+ height: 500px;
 }

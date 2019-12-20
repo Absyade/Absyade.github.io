@@ -1,5 +1,5 @@
 .sticky-element {
-  position: fixed;
+  position: relative;
 }
 .logo-nav img {
   position: fixed;
@@ -13,3 +13,15 @@
  transition: all 0.7s ease-in-out 0s;
 }
 
+.followme {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.sticky {
+  position: fixed;
+   color: white;
+}

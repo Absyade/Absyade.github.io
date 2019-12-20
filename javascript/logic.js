@@ -65,7 +65,6 @@ window.onload = function() {
           style: "mapbox://styles/absinho/ck3z0ogoj19971cn7cbxqod2t",
           center: [-0.125, 51.508],
           zoom: 2,
-
         });
         map.addControl(new mapboxgl.NavigationControl());
         var size = 100;

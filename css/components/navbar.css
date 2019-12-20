@@ -5,7 +5,6 @@
   padding: 15px 25px;
   top: 0;
   position: fixed;
-
 }
 .navbar-abs a {
   text-decoration: none;
@@ -14,7 +13,6 @@
   font-size: 25px;
   margin: 20px;
 }
-
 .navbar-abs a:hover {
   text-decoration: none;
   color: #FB4B4E;
@@ -22,27 +20,13 @@
   font-size: 25px;
   transition: 1s ease;
 }
-
 .logo-nav img {
   position: fixed;
   height: 100px;
 }
-
-
-.navbar-abs-right {
-  display: flex;
-  li {
-    font-size: 18px;
-    color: white;
-  }
-
-}
-
-
 .logo-nav img {
   transition: all 0.7s ease-in-out 0s;
 }
-
 .logo-nav img:hover {
    cursor: default;
     transform: rotate(360deg);
