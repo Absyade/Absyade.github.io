@@ -81,7 +81,7 @@ body h1, h2, h3, h4, h5, a, p {
   color: white;
 }
 .about-right {
-  background-color: #FB4B4E;
+  background-color: black;
   padding: 30px;
   text-align: left;
   overflow: scroll;
@@ -89,6 +89,7 @@ body h1, h2, h3, h4, h5, a, p {
   margin-left: auto;
   margin-right: auto;
   height: 550px;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
 }
 /*SERVICES*/
 .services {
