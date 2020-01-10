@@ -1,7 +1,9 @@
 /*GLOBAL*/
 body {
   margin: 0px;
+  background-color: black !important;
 }
+
 body h1, h2, h3, h4, h5, a, p {
   font-family: 'Rubik', sans-serif;
 }
@@ -37,17 +39,6 @@ body h1, h2, h3, h4, h5, a, p {
 .banner-text a:hover {
   text-decoration: none;
 }
-
-/*.social-medias-abs a{
-  text-decoration: none;
-  margin-right: 30px;
-  color: white;
-  font-size: 45px;
-  line-height: 100px;
-}
-.social-medias-abs a:hover {
-  color: #FB4B4E;
-}*/
 /*ABOUT*/
 .about {
   padding: 50px 100px;
@@ -120,28 +111,27 @@ body h1, h2, h3, h4, h5, a, p {
 }
 /*SKILLS*/
 .skills {
-  background-size: cover;
-  text-align: center;
-  height: 100vh;
-  padding: 20px;
-  overflow: hidden;
+  background-color: black;
+  border: 1px solid #FB4B4E;
 }
 .skill-wrapper {
-  margin: 100px auto;
+  display: flex;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
   /*padding: 100px;*/
 }
 .skill-box img {
-  height: 40px;
+  height: 50px;
   object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .skill-box {
-  border: 1px solid white;
   padding: 25px;
   margin: 5px;
-  color: #FB4B4E;
+  color: white;
   background-color: transparent;
   text-align: center;
 }
@@ -174,7 +164,7 @@ body h1, h2, h3, h4, h5, a, p {
   overflow: hidden;
 }
 .wheregrid {
-display: grid;
+  display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 /*grid-template-columns: 1fr 1fr;
