@@ -41,11 +41,11 @@ body h1, h2, h3, h4, h5, a, p {
 }
 /*ABOUT*/
 .about {
-  padding: 50px 100px;
+  padding: 20px;
   background-color: black;
   color: white;
   text-align: center;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 .about-left {
@@ -61,7 +61,6 @@ body h1, h2, h3, h4, h5, a, p {
  padding: 0;
  margin-left: auto;
  margin-right: auto;
- margin-bottom: 100px;
 }
 .about-contact {
   text-decoration: none;
@@ -82,33 +81,7 @@ body h1, h2, h3, h4, h5, a, p {
   height: 550px;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.3);
 }
-/*SERVICES*/
-.services {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0px 30px;
-  position: relative;
-  top: 400;
-}
-.conception {
-  width: 470px;
-  padding: 15px;
-  color: white;
-}
-.design {
-  width: 470px;
-  padding: 15px;
-  border-left: 1px #262626 solid;
-  border-right: 1px #262626 solid;
-  color: white;
-}
-.development {
-  width: 470px;
-  padding: 15px;
-  color: white;
-}
+
 /*SKILLS*/
 .skills {
   background-color: black;
@@ -157,9 +130,9 @@ body h1, h2, h3, h4, h5, a, p {
 }
 /*MAP*/
 .where {
-  background-color: grey;
+  background-color: black;
   background-size: cover;
-  padding: 100px;
+  padding: 80px;
   height: 100vh;
   overflow: hidden;
 }
@@ -167,9 +140,8 @@ body h1, h2, h3, h4, h5, a, p {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-/*grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-column-gap: 30px;
-grid-template-rows: 80px 60px;*/
 }
 .where-elements > ul {
   display: grid;
