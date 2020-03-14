@@ -1,6 +1,5 @@
 /*GLOBAL*/
 body {
-  margin: 0px;
   background-color: black !important;
 }
 
@@ -25,7 +24,6 @@ body h1, h2, h3, h4, h5, a, p {
   position: absolute;
   top: 30%;
   left: 15%;
-
 }
 .banner-text h1 {
   color: white;
