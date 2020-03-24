@@ -176,6 +176,7 @@ grid-column-gap: 30px;
   .banner-portfolio {
   background-image: url("../../images/bg-mobile.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
@@ -184,9 +185,10 @@ grid-column-gap: 30px;
   .banner-text h1 {
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.3);
 }
+
 .about img {
  height: 300px;
  object-fit: cover;
