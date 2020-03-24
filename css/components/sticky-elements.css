@@ -18,6 +18,14 @@
   bottom: 40px;
   left: 95%;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .followme {
+  position: fixed;
+  bottom: 40px;
+  left: 90%;
+}
+}
 .followme a {
   color: white;
   font-size: 14px;
