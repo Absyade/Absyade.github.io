@@ -63,7 +63,7 @@ window.onload = function() {
         var map = new mapboxgl.Map({
           container: "map",
           style: "mapbox://styles/absinho/ck3z0ogoj19971cn7cbxqod2t",
-          center: [-0.125, 51.508],
+          center: [55.296249, 25.276987],
           zoom: 2,
         });
         map.addControl(new mapboxgl.NavigationControl());
@@ -132,7 +132,7 @@ map.on('load', function () {
           "type": "Feature",
           "geometry": {
             "type": "Point",
-            "coordinates": [-0.125, 51.508]
+            "coordinates": [55.296249, 25.276987]
           }
         }]
       }
